@@ -3777,43 +3777,4 @@ buttonRequest.onclick = loadJson;
 //const unsigned short DONE = 4; // запрос завершён
 //************
 
-//************
-function User(name) {
-    this.name = name;
-}
-var exports = User;
-var phrases = {
-    Hello: "Привет",
-    Run: "Запуск успешен"
-}
-console.log(phrases)
-//exports.connect - база данных загружает фразы
-exports.connect = function () {
-
-};
-
-exports.getPhrase = function (name) {
-    console.log(phrases[name]);
-    if (!phrases[name]) {
-        throw  new Error("Нет такой фразы " + name);
-    }
-    return phrases[name];
-};
-
-
-var db = exports;
-
-
-User.prototype.hello = function (who) {
-    console.log(db.getPhrase("Hello") + ", " + who.name);
-};
-
-
-
-
-var vasya = new User("Вася");
-var petya = new User("Петя");
-
-vasya.hello(petya);
-//************
 

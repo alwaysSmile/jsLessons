@@ -130,6 +130,11 @@ buttonRequest.onclick = loadJson;
 function User(name) {
     this.name = name;
 }
+
+User.prototype.hello = function (who) {
+    console.log(db.getPhrase("Hello") + ", " + who.name);
+};
+
 var exports = User;
 var phrases = {
     Hello: "Привет",
@@ -151,12 +156,6 @@ exports.getPhrase = function (name) {
 
 
 var db = exports;
-
-
-User.prototype.hello = function (who) {
-    console.log(db.getPhrase("Hello") + ", " + who.name);
-};
-
 
 var vasya = new User("Вася");
 var petya = new User("Петя");
