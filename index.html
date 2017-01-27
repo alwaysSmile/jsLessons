@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper" id="wrap">
+            <p id="text" class="text">Click the button to make a BUTTON element with text.</p>
+            <div class="my-button" id="myButton">onClick</div>
+            <button class="button test-button"><span>button</span></button>
+            <button class="button test-button"><span>button</span></button>
+            <button class="button test-button"><span>button</span></button>
+            <div id="txt" class="clock"></div>
+            <div id="elem" data-id="Elephant"></div>
+            <div  id="myId">
+                <div id="indoor"></div>
+            </div>
+            <div class="timestamp for-remove" id="timestamp"></div>
+            <div class="collections-elements">
+                <div class="collections__children collections__children1">
+                    <p class="collections__inner">previous element</p>
+                </div>
+                <div class="collections__children collections__children2" id="collections__children">
+                    <p class="collections__inner">central element</p>
+                </div>
+                <div class="collections__children collections__children3">
+                    <p class="collections__inner">next element</p>
+                </div>
+            </div>
+            <!--example onload-->
+            <h1 class="title">example onload</h1>
+            <div class="main-el">
+                <div class="main-el__inner">
+                    <p class="main-el__button handle">Щёлкните здесь</p>
+                    <p class="main-el__text">Этот абзац не видим.</p>
+                </div>
+                <div class="main-el__inner">
+                    <p class="main-el__button handle">Щёлкните здесь</p>
+                    <p class="main-el__text">Этот абзац не видим.</p>
+                </div>
+            </div>
+            <!--addEventListener removeEventListener-->
+            <h1 class="title">addEventListener removeEventListener</h1>
+            <div class="buttton-hendler buttton-thank-you">buttton-hendler</div>
+            <!--addEventListener removeEventListener-->
+            <!--addEventListener-->
+            <h3 class="subtitle">Несколько обработчиков на одно событие</h3>
+            <div class="buttton-hendler" id="myHendler">buttton-hendler</div>
+            <!--addEventListener-->
+            <!--animate-button-->
+            <h3 class="subtitle">Сработает анимация а потом выполнится функция</h3>
+            <div class="buttton-animate" id="animateButton">animate-button</div>
+            <!--animate-button-->
+            <!--width of Element-->
+            <h3 class="subtitle">Доступ к нестандартным HTML - атрибутам</h3>
+            <div class="full-width" id="fullWidth">
+                <p class="">Узнаём ширину блока</p>
+            </div>
+            <!--width of Element-->
+            <!--create new Elem or node-->
+            <h3 class="subtitle">create new Element or node</h3>
+            <ul class="list" id="list">
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+            </ul>
+            <!--create new Elem or node-->
+            <!--sort table-->
+            <h3 class="subtitle">Сортировка строк таблицы</h3>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Name1</td><td>Email1</td><td>Phone1</td><td>Mobile1</td></tr>
+                    <tr><td>Name2</td><td>Email2</td><td>Phone2</td><td>Mobile2</td></tr>
+                    <tr><td>Name3</td><td>Email3</td><td>Phone3</td><td>Mobile3</td></tr>
+                    <tr><td>Name4</td><td>Email4</td><td>Phone4</td><td>Mobile4</td></tr>
+                </tbody>
+            </table>
+            <!--sort table-->
+            <!--curents elements and clones-->
+            <h1 class="title">curents elements and clones</h1>
+            <div class="curents-clones" id="curentsClones"></div>
+            <!--curents elements and clones-->
+            <!--remove element on click-->
+            <h1 class="title">remove element</h1>
+            <div>
+                <div class="remove-el show-element">
+                    <p>click me</p>
+                </div>
+                <div class="remove-el show-element">
+                    <p>click me</p>
+                </div>
+            </div>
+            <!--remove element on click-->
+            <!--move the element to a new location-->
+            <h1 class="title">move the element to a new location</h1>
+            <div class="replace-elements">
+                <div class="replace-element">
+                    <p>first element</p>
+                </div>
+                <div class="replace-element">
+                    <p>second element</p>
+                </div>
+            </div>
+            <!--move the element to a new location-->
+            <!--innerText-->
+            <div class="" id="forInsert"></div>
+            <!--innerText-->
+            <!--insertAdjacentHTML-->
+            <div class="description">
+                <p>Метод <span class="description__main">insertAdjacentHTML</span> позволяет вставлять произвольный HTML в любое место документа, в том числе и между узлами!</p>
+                <p>Пример ниже, вставляю в середину списка элемент, используя метод <span class="description__main">insertAdjacentHTML</span></p>
+            </div>
+            <ul class="list" id="list2">
+                <li><p>first</p></li>
+                <li><p>second</p></li>
+                <!--Место для вставки элементов-->
+                <li><p>fifth</p></li>
+            </ul>
+            <!--insertAdjacentHTML-->
+            <!--getBoundingClientRect-->
+            <h1 class="title">getBoundingClientRect</h1>
+            <div class="description">
+                <p>Метод <span class="description__main">elem.getBoundingClientRect()</span> возвращает координаты элемента, под которыми понимаются размеры «воображаемого прямоугольника», который охватывает весь элемент.</p>
+            </div>
+            <div class="wrap-center">
+                <div class="inner-center"></div>
+            </div>
+            <!--getBoundingClientRect-->
+            <!--input-->
+            <div class="form-inputs">
+                <h1 class="title">Выбор элементов форм</h1>
+                <input type="text" class="form-control"/>
+                <input type="text" class="form-control"/>
+                <input type="text" class="form-control"/>
+            </div>
+            <!--input-->
+            <!--form-->
+            <form class="form-tickets" name="shipping">
+                <fieldset>
+                    <legend>Shipping Method</legend>
+                    <label>
+                        <input type="radio" name="method" value="1st"/>Первым классом
+                    </label>
+                    <label>
+                        <input type="radio" name="method" value="2day"/>За 2 дня самолётом
+                    </label>
+                    <label>
+                        <input type="radio" name="method" value="overnite"/>В течении ночи
+                    </label>
+                    <div class="button-result">result</div>
+                    <output name="result" id="output">please make your choice</output>
+                </fieldset>
+            </form>
+            <!--form-->
+            <!--contenteditable-->
+            <div>
+                <div class="description">
+                    <p>Ниже находится элемент с атрибутом <span class="description__main">contenteditable</span>, который позволяет редактировать текст</p>
+                </div>
+                <p class="editor" id="editor" contenteditable>Щёлкните, чтобы отредактировать</p>
+            </div>
+            <!--contenteditable-->
+            <!--Ajax Request-->
+            <div>
+                <h1 class="title">Ajax Request</h1>
+                <button class="button-request">Запрос</button>
+            </div>
+            <!--Ajax Request-->
+            
+        </div>
+        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/my-script.js" type="text/javascript"></script>
+        <script src="js/my-script2.js" type="text/javascript"></script>
+    </body>
+</html>
