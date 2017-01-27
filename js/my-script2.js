@@ -126,6 +126,7 @@ buttonRequest.onclick = loadJson;
 //************
 
 //************
+//Из примеров по node.js, только всё сплошным кодом
 function User(name) {
     this.name = name;
 }
@@ -155,8 +156,6 @@ var db = exports;
 User.prototype.hello = function (who) {
     console.log(db.getPhrase("Hello") + ", " + who.name);
 };
-
-
 
 
 var vasya = new User("Вася");
